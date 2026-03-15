@@ -15,6 +15,8 @@ encodings = {
     "curie": tiktoken.get_encoding("r50k_base"),
     "babbage": tiktoken.get_encoding("r50k_base"),
     "ada": tiktoken.get_encoding("r50k_base"),
+    "MiniMax-M2.5": tiktoken.get_encoding("cl100k_base"),
+    "MiniMax-M2.5-highspeed": tiktoken.get_encoding("cl100k_base"),
 }
 
 max_length = {
@@ -31,7 +33,9 @@ max_length = {
     "davinci": 2049,
     "curie": 2049,
     "babbage": 2049,
-    "ada": 2049
+    "ada": 2049,
+    "MiniMax-M2.5": 204800,
+    "MiniMax-M2.5-highspeed": 204800,
 }
 
 def count_tokens(model_name, text):
