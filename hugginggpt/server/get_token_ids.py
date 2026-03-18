@@ -15,6 +15,8 @@ encodings = {
     "curie": tiktoken.get_encoding("r50k_base"),
     "babbage": tiktoken.get_encoding("r50k_base"),
     "ada": tiktoken.get_encoding("r50k_base"),
+    "MiniMax-M2.7": tiktoken.get_encoding("cl100k_base"),
+    "MiniMax-M2.7-highspeed": tiktoken.get_encoding("cl100k_base"),
     "MiniMax-M2.5": tiktoken.get_encoding("cl100k_base"),
     "MiniMax-M2.5-highspeed": tiktoken.get_encoding("cl100k_base"),
 }
@@ -34,6 +36,8 @@ max_length = {
     "curie": 2049,
     "babbage": 2049,
     "ada": 2049,
+    "MiniMax-M2.7": 204800,
+    "MiniMax-M2.7-highspeed": 204800,
     "MiniMax-M2.5": 204800,
     "MiniMax-M2.5-highspeed": 204800,
 }
